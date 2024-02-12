@@ -1,0 +1,188 @@
+body {
+    background: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.nav-link:hover {
+    color: #cf314c !important;
+}
+
+/* CSS tambahan untuk header navbar */
+/* Membuat header navbar tetap di bagian atas layar */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Membuat sidebar agar hanya menempati 1/4 lebar layar */
+.sidebar {
+    flex: 0 0 12.5%;
+    /* 1/8 dari lebar layar */
+    height: 100%;
+    /* Tinggi sidebar setara dengan tinggi layar */
+    overflow-y: auto;
+    /* Tambahkan scroll jika konten sidebar lebih panjang dari tinggi layar */
+
+    position: sticky;
+    top: 80px;
+    /* Atur posisi tetap berada di bagian atas saat discroll */
+}
+
+
+.sidebar-dark-gray {
+    background-color: #333333 !important;
+}
+
+.sidebar .nav-link,
+a {
+    text-decoration: none !important;
+}
+
+.sidebar li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.content {
+    flex: 1;
+    /* Mengambil sisa lebar yang tersisa */
+}
+
+.card-title,
+.text-iconic {
+    color: #cf314c;
+}
+
+.powerlist li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.misi-description {
+    font-size: 13px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../image/arrow-right.svg') !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../image/arrow-left.svg') !important;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.client-logo {
+    width: 33.33%;
+    /* Setiap logo mengambil 1/3 dari lebar parent */
+    padding: 10px;
+    /* Tambahkan padding sesuai kebutuhan */
+    box-sizing: border-box;
+    /* Pastikan padding tidak menambah lebar elemen */
+    text-align: center;
+    /* Posisikan teks di tengah */
+    border: 1px solid #d3d3d3;
+    /* Tambahkan border */
+}
+
+.client-logo img {
+    max-width: 50%;
+    /* Pastikan gambar tidak melebihi lebar parent */
+}
+
+#event .card-event {
+    border-right: 15px solid #cf314c !important
+}
+
+#event .card-text {
+    font-size: 13px;
+}
+
+#event .date-event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#event .date-event span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#event .form-filter,
+#article .form-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#event .form-filter label {
+    margin-right: 10px;
+}
+
+#event .form-filter select,
+#article .form-filter input {
+    flex-grow: 1;
+    margin-right: 10px;
+    display: inline-block !important;
+    width: auto;
+    /* agar selebar isi */
+}
+
+#event .form-filter button,
+#article .form-filter button {
+    flex-shrink: 0;
+    /* agar tombol tidak menyusut */
+}
+
+#article .date-article {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#product .product-item,#product .card-footer {
+    background: #FAFAFA;
+}
+
+#product .card-footer{
+    border-top: none !important;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+}
+#product .nav-tabs .nav-link{
+    color: #424242;
+}
+
+#product .product-item .card-title{
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#product .label-price {
+    color: #4f4f4f;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+#product .value-price {
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 18px;
+    color: #282828;
+}

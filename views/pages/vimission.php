@@ -1,13 +1,13 @@
 <section id="visi-misi" class="container py-4">
     <div class="row">
         <div class="col-md-12 text-center">
-            <img src="assets/image/visimisi.jpg" class="img-fluid w-50 mb-4" alt="Gambar Visi Misi">
+            <img src="assets/image/<?= $gambar_vmission; ?>" class="img-fluid w-50 mb-4" alt="Gambar Visi Misi">
         </div>
         <div class="col-md-12 text-center">
             <div class="card shadow border-0 mb-4">
                 <div class="card-body">
                     <h2 class="card-title">Visi</h2>
-                    <p class="card-text">Menjadi komunitas unggul yang menjadi sumber inspirasi bagi para penggemar motor Honda, menciptakan ikatan kebersamaan yang kuat, dan mendorong semangat petualangan di setiap perjalanan.</p>
+                    <p class="card-text"><?= $visi_vmission ?></p>
                 </div>
             </div>
         </div>
@@ -16,7 +16,20 @@
                 <div class="card-body">
                     <h2 class="card-title text-center">Misi</h2>
                     <div class="row mx-0">
-                        <div class="col-md-4">
+                        
+                        <?php                        
+                        foreach ($misi_vmission as $k => $item) :
+                        ?>
+                            <div class="col-md-4">
+                                <div class="card shadow border-0 misi-item my-3" id="mission0<?= $k ?>">
+                                    <div class="card-body">
+                                        <?= $item['content'] ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <!-- <div class="col-md-4">
                             <div class="card shadow border-0 misi-item my-3" id="mission01">
                                 <div class="card-body">
                                     <h5 class="misi-title mb-4">Menghubungkan Hati dan Jalan Raya</h5>
@@ -76,7 +89,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
